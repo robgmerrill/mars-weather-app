@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="mars-current-weather">
+      <h1 class="main-title">Latest Weather Elysium Plantitia</h1>
+      <div class="date">
+        <h2 class="section-title section-title--date">Sol 377</h2>
+        <p class="date__day">December 18</p>
+      </div>
+      <div class="temp">
+        <h2 class="section-title">Temperature</h2>
+        <p class="reading">High: -20098</p>
+        <p class="reading">Low: -79998</p>
+      </div>
+      <div class="wind">
+        <h2 class="section-title">Wind</h2>
+        <p class="reading">75kph</p>
+
+        <div class="wind__direction">
+          <p class="sr-only">45deg</p>
+          <div class="wind__arrow"></div>
+        </div>
+      </div>
+
+      <div class="info">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id placeat
+          cumque obcaecati reprehenderit ipsam, amet autem! Modi, numquam
+          minima.
+          <a
+            >Praesentium asperiores, autem beatae animi quas eaque obcaecati
+            tenetur ad! Neque?</a
+          >
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+          obcaecati magni, dolorum reprehenderit recusandae nulla facilis porro,
+          suscipit voluptate corrupti vel rem fugit commodi animi possimus
+          temporibus tempore atque expedita?
+        </p>
+      </div>
+
+      <div class="unit">
+        <label for="cel">
+          deg C
+        </label>
+        <input type="radio" id="cel" name="unit" checked />
+        <!-- when unit toggle is clicked checkbox needs to change -->
+        <button class="unit__toggle"></button>
+        <label for="fah">
+          deg F
+        </label>
+        <input type="radio" id="fah" name="unit" />
+      </div>
+    </main>
+
+    <h2 class="main-title">Previous 7 days</h2>
+
+    <div class="previous-days">
+      <div class="previous-day">
+        <h3 class="previous-day__sol">Sol 371</h3>
+        <p class="previous-day__date">December 12</p>
+        <p class="previous-day__temp">High: -20098</p>
+        <p class="previous-day__temp">Low: -79998</p>
+        <div class="previous-day__more-info">more info</div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
